@@ -1,0 +1,15 @@
+{
+    "feature_cols": [
+        "amount",
+        "oldbalanceOrg",
+        "newbalanceOrig",
+        "oldbalanceDest",
+        "newbalanceDest",
+        "delta_orig",
+        "delta_dest",
+        "amt_log",
+        "trans_ratio",
+        "type_code"
+    ],
+    "best_threshold": 0.9999999999999849
+}
