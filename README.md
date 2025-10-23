@@ -1,7 +1,5 @@
 
-
-
-# 💸 Financial Fraud Detection with Machine Learning  
+# 💸 Financial Fraud Detection System  
 
 > _“Every second, a transaction happens. Some are fake — we catch those.”_
 
@@ -16,7 +14,7 @@
 
 ## 🔍 TL;DR
 End-to-end **Machine Learning pipeline** for detecting fraudulent financial transactions.  
-Features real-world data, **LightGBM model**, and fully **interactive animated dashboards** for visual insights.  
+Features real-world data, a **LightGBM model**, and fully **interactive Plotly dashboards** for deep visual insights.  
 
 > Fraud detection isn’t just about accuracy — it’s about catching the red flags *before* they cost millions.
 
@@ -24,12 +22,12 @@ Features real-world data, **LightGBM model**, and fully **interactive animated d
 
 ## ⚡ Highlights
 
-- 🧹 **Data preprocessing** and feature engineering for realistic banking data  
-- 🧮 **LightGBM classifier** tuned for precision–recall trade-off  
-- 🔍 **Explainable AI** via feature importance visualization  
-- 💹 **Interactive Plotly dashboards** with animations and filters  
-- 📊 **Model performance:** 98.4% Accuracy · 94.7% Recall · 0.992 ROC-AUC  
-- 🌐 Future-ready architecture for Streamlit or HuggingFace deployment  
+- 🧹 **Data preprocessing** and feature engineering tailored for financial data  
+- 🧮 **LightGBM classifier** tuned for precision–recall balance  
+- 🔍 **Explainable AI** with feature importance and model insights  
+- 💹 **Interactive dashboards** built with Plotly (animated and dynamic)  
+- 📊 **Performance:** 98.4% Accuracy · 94.7% Recall · 0.992 ROC-AUC  
+- 🌐 Ready for **Streamlit** or **HuggingFace** deployment  
 
 ---
 
@@ -37,23 +35,23 @@ Features real-world data, **LightGBM model**, and fully **interactive animated d
 
 ### 📊 Transaction Type Distribution  
 Interactive breakdown of transaction categories (CASH_IN, CASH_OUT, TRANSFER, PAYMENT).  
-👉 **[`View Chart`](dashboards/transaction_types_distribution.html)**  
+👉 **[`View Chart`](Graphs/transaction_types_distribution.html)**  
 
 ### 💰 Transaction Amount Distribution (Animated)  
-Animated Plotly chart showing transaction flow and amount over time.  
-👉 **[`View Chart`](dashboards/transaction_amount_distribution_animated.html)**  
+Animated Plotly visualization showing transaction amounts over time.  
+👉 **[`View Chart`](Graphs/transaction_amount_distribution_animated.html)**  
 
 ### 🧾 Origin Account Balances (Animated)  
-Visualizes before-and-after balance shifts for origin accounts.  
-👉 **[`View Chart`](dashboards/origin_account_balances_animated.html)**  
+Visualizes before-and-after balance changes for origin accounts.  
+👉 **[`View Chart`](Graphs/origin_account_balances_animated.html)**  
 
 ### ⚖️ Fraud Rate by Transaction Type  
 Highlights the fraud percentage per transaction category.  
-👉 **[`View Chart`](dashboards/fraud_rate_by_type.html)**  
+👉 **[`View Chart`](Graphs/fraud_rate_by_type.html)**  
 
 ### 🧠 Feature Importance (Explainable AI)  
 Shows how each feature contributes to fraud detection decisions.  
-👉 **[`View Chart`](dashboards/feature_importance.html)**  
+👉 **[`View Chart`](Graphs/feature_importance.html)**  
 
 ---
 
@@ -61,22 +59,22 @@ Shows how each feature contributes to fraud detection decisions.
 
 | Folder / File | Description |
 |----------------|-------------|
-| `notebooks/Fraud_Detection_with_Machine_Learning.ipynb` | Full ML pipeline & model training |
-| `dashboards/` | Interactive Plotly HTML visualizations |
+| `Fraud_Detection_with_Machine_Learning.ipynb` | Complete ML pipeline and model training |
+| `Graphs/` | Interactive Plotly HTML dashboards |
 | `data/transactions.csv` | Sample dataset |
-| `app.py` | (Optional) Streamlit dashboard script |
+| `app.py` | (Optional) Streamlit web app |
 | `requirements.txt` | Library dependencies |
-| `README.md` | This file 😉 |
+| `README.md` | You’re reading it 😉 |
 
 ---
 
 ## 🧠 Model Workflow
 
-1️⃣ **Data Cleaning & Preprocessing** — handled missing values, normalized balances  
-2️⃣ **Feature Engineering** — created derived balance delta & transaction type indicators  
-3️⃣ **Model Training** — optimized LightGBM model for maximum recall  
-4️⃣ **Evaluation** — accuracy, recall, precision, ROC-AUC metrics  
-5️⃣ **Explainability** — feature importance for business interpretability  
+1️⃣ **Data Cleaning & Preprocessing** — handled nulls, encoded transaction types, normalized amounts  
+2️⃣ **Feature Engineering** — created balance deltas and time-based features  
+3️⃣ **Model Training** — optimized LightGBM for recall and precision  
+4️⃣ **Evaluation** — analyzed results via accuracy, recall, precision, and ROC-AUC  
+5️⃣ **Explainability** — feature importance visualization for transparency  
 
 ---
 
@@ -89,25 +87,25 @@ Shows how each feature contributes to fraud detection decisions.
 | Precision | 🟢 **95.3%** |
 | ROC-AUC | 🔵 **0.992** |
 
-> 🎯 Optimized for *high recall* — because missing a fraud is worse than a false alert.
+> 🎯 Tuned for *high recall* — because missing a fraud costs more than a false alert.
 
 ---
 
 ## 🚀 Quickstart
 
 ```bash
-# Clone repo
-git clone https://github.com/yourusername/Fraud-Detection-ML-Dashboard.git
-cd Fraud-Detection-ML-Dashboard
+# Clone the repository
+git clone https://github.com/shashikathi/fraud-detection-system.git
+cd fraud-detection-system
 
 # Install dependencies
 pip install -r requirements.txt
 
-# Run Jupyter Notebook
-jupyter notebook notebooks/Fraud_Detection_with_Machine_Learning.ipynb
+# Run the notebook
+jupyter notebook Fraud_Detection_with_Machine_Learning.ipynb
 ```
 
-(Optional — if you add Streamlit later)
+(Optional — if you build a Streamlit app)
 ```bash
 streamlit run app.py
 ```
@@ -120,22 +118,22 @@ streamlit run app.py
 |-----------|-------|
 | ML & Data | Python, Pandas, NumPy, Scikit-learn, LightGBM |
 | Visualization | Plotly, Matplotlib, Seaborn |
-| Deployment | Streamlit (optional) |
 | Environment | Jupyter Notebook |
+| Deployment | Streamlit (optional) |
 
 ---
 
 ## 🌱 Future Enhancements
-- 🧠 Add SHAP for local explainability  
-- 🪙 Real-time fraud prediction API  
-- 💻 Streamlit web app for interactive user inputs  
-- 📈 Live data simulation using synthetic streams  
+- 🧮 Integrate **SHAP** for deeper explainability  
+- 💻 Add a **real-time fraud prediction API**  
+- 🪙 Deploy Streamlit dashboard for live scoring  
+- 📈 Enable **continuous learning** with streaming data  
 
 ---
 
 ## 👨‍💻 Author
 **K. Shashi Preetham**  
-_Data Analyst · Data Science & Machine Learning Enthusiast_  
+_Data Analyst · Data Science & ML Enthusiast_  
 📍 India  
 
 🔗 [LinkedIn](https://www.linkedin.com/in/shashikathi)  
@@ -144,18 +142,11 @@ _Data Analyst · Data Science & Machine Learning Enthusiast_
 ---
 
 ## 🧾 License  
-Licensed under the **MIT License** — free for public and commercial use with attribution.
+Licensed under the **MIT License** — free to use and modify with attribution.
 
 ---
 
 ## 🌟 Show Some ❤️  
-If you like this project, drop a ⭐ on GitHub — it really helps!  
+If this project helped or inspired you, give it a ⭐ on GitHub!  
 Let’s connect and build data-driven solutions together 💡
-````
 
----
-
-✅ **Paste it directly into your repo’s README.md — no edits needed.**
-GitHub will render the badges, tables, and all chart links beautifully.
-
-Wanna go one step further? I can generate matching **repo banner art (like the one on top)** with your project title and tagline — professional and visually consistent with this README. Want that?
