@@ -35,23 +35,22 @@ Features real-world data, a **LightGBM model**, and fully **interactive Plotly d
 
 ### 📊 Transaction Type Distribution  
 Interactive breakdown of transaction categories (CASH_IN, CASH_OUT, TRANSFER, PAYMENT).  
-👉 **[`View Chart`](Graphs/transaction_types_distribution.html)**  
+
 
 ### 💰 Transaction Amount Distribution (Animated)  
 Animated Plotly visualization showing transaction amounts over time.  
-👉 **[`View Chart`](Graphs/transaction_amount_distribution_animated.html)**  
+
 
 ### 🧾 Origin Account Balances (Animated)  
 Visualizes before-and-after balance changes for origin accounts.  
-👉 **[`View Chart`](Graphs/origin_account_balances_animated.html)**  
+
 
 ### ⚖️ Fraud Rate by Transaction Type  
 Highlights the fraud percentage per transaction category.  
-👉 **[`View Chart`](Graphs/fraud_rate_by_type.html)**  
 
 ### 🧠 Feature Importance (Explainable AI)  
 Shows how each feature contributes to fraud detection decisions.  
-👉 **[`View Chart`](Graphs/feature_importance.html)**  
+ 
 
 ---
 
