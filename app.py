@@ -10,7 +10,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
 # ------------------ Load Data ------------------
-df = pd.read_csv("/content/drive/MyDrive/Colab Notebooks/Fraud.csv")
+df = pd.read_csv(r"E:\ml projects\Fruad\fraud-detection-dashboard\data\Fraud.csv")
 
 st.set_page_config(page_title="🚨 Fraud Detection Dashboard", layout="wide")
 st.title("🚨 Fraud Detection Dashboard")
